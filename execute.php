@@ -43,7 +43,7 @@ if ($request == "manca")
   		}
 	}
 } else {
-	$text= "illaltro";	
+	$text+= "illaltro";	
 }
 
 
