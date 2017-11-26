@@ -41,6 +41,9 @@ if ($request == "manca")
   			$text .= "- $row[1]\n"; 
   		}
 	}
+} else if ($message['voice']) {
+	$text .= json_encode($message['voice']);
+
 } else {
 	$text = "mex:" . json_encode($message);	
 }
