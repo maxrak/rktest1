@@ -24,11 +24,11 @@ $username = isset($message['chat']['username']) ? $message['chat']['username'] :
 $date = isset($message['date']) ? $message['date'] : "";
 $request =isset($message['text']) ? $message['text'] : "";
 
-$text = "";
+$text = "Hai chiesto: ";
 
 if ($request == "manca") 
 {
-	$text += "mancano:\n";
+	$text += "cosa manca:\n";
 
 
 	# Now let's use the connection for something silly just to prove it works:
