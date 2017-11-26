@@ -28,22 +28,22 @@ $text = "Hai chiesto: ";
 
 if ($request == "manca") 
 {
-	$text += "cosa manca:\n";
+	$text .= "cosa manca:\n";
 
 
 	# Now let's use the connection for something silly just to prove it works:
 	$result = pg_query($pg_conn, "SELECT * FROM dispensa.manca");
 
 	if (!pg_num_rows($result)) {
-		$text +="Your connection is working, but your database is empty.\nFret not. This is expected for new apps.\n";
+		$text .="Your connection is working, but your database is empty.\nFret not. This is expected for new apps.\n";
 	} else {
-  		$text += "Tables in your database:\n";
+  		$text .= "Tables in your database:\n";
   		while ($row = pg_fetch_row($result)) { 
-  			$text += "- $row[1]\n"; 
+  			$text .= "- $row[1]\n"; 
   		}
 	}
 } else {
-	$text+= "illaltro";	
+	$text .= "illaltro";	
 }
 
 
