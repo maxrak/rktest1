@@ -20,7 +20,7 @@ if ($request == "manca")
 {
 	$text="illo";
 } else {
-	$text= "illaltro;	
+	$text= "illaltro";	
 }
 
 
