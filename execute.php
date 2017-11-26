@@ -42,7 +42,7 @@ if ($request == "manca")
   		}
 	}
 } else {
-	$text = "type:" . $message['type'];	
+	$text = "type:" . $message;	
 }
 
 
