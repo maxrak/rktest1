@@ -42,7 +42,7 @@ if ($request == "manca")
   		}
 	}
 } else {
-	$text = "type:" . $message;	
+	$text = "mex:" . json_encode($message);	
 }
 
 
